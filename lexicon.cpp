@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 
@@ -21,7 +22,7 @@ class lexicon {
       }
     }
 
-    static bool insert(node *t, const T &x){
+    static bool insert(node *t, const string &x){
       if (x < t->word){
         if (t->left == nullptr){
           t->left = new node(x, nullptr, nullptr, t);
