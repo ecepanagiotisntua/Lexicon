@@ -1,2 +1,2 @@
 language = "cpp"
-run = ""
+run = "g++ -g3 -O0 lexicon.cpp -o a.out"
